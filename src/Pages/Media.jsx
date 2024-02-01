@@ -4,10 +4,8 @@ import "../assets/Paginate.css";
 import data from "../assets/data2.json";
 import {
   Box,
-  Button,
   Card,
   CardBody,
-  CardFooter,
   Center,
   Heading,
   Image,
@@ -77,20 +75,24 @@ function Items({ currentItems }) {
   return currentItems.map(({ imgsrc, headline, text, link }) => (
     <>
       <Card
-        boxShadow={"5px 5px 5px rgb(255,255,255,1)"}
+        boxShadow={"5px 5px 5px rgb(255,255,255,0.5)"}
         direction={["column", null, "row"]}
         overflow="hidden"
         variant="outline"
+        bgColor={"foreground"}
+        color={"background"}
       >
-        <Image
-          objectFit="cover"
-          maxW={["100%", null, "40%"]}
-          src={imgsrc}
-          alt={headline}
-        />
+        {imgsrc && (
+          <Image
+            objectFit="cover"
+            maxW={["100%", null, "40%"]}
+            src={imgsrc}
+            alt={headline}
+          />
+        )}
 
         <Stack>
-          <CardBody>
+          <CardBody bgColor={"foreground"} color={"background"}>
             <Heading
               size="sm"
               h={"1rem"}
@@ -98,6 +100,8 @@ function Items({ currentItems }) {
               overflow={"hidden"}
               width={["100%", null, "200px"]}
               whiteSpace={"nowrap"}
+              bgColor={"foreground"}
+              color={"background"}
             >
               {headline}
             </Heading>
@@ -105,21 +109,22 @@ function Items({ currentItems }) {
             <Text
               py="2"
               size={"sm"}
-              h={"3rem"}
+              h={"3.5rem"}
               overflow={"hidden"}
               textOverflow={"ellipsis"}
+              bgColor={"foreground"}
+              color={"background"}
             >
               {text}
             </Text>
-          </CardBody>
-
-          <CardFooter>
             <Link href={link} isExternal>
-              <Button variant="solid" colorScheme="blue">
-                Read More
-              </Button>
+              <b>Read More</b>
             </Link>
-          </CardFooter>
+            <Text color={"gray"} size={"0.2rem"}>
+              {" "}
+              23 september 2023
+            </Text>
+          </CardBody>
         </Stack>
       </Card>
     </>
