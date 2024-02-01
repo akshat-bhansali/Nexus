@@ -36,13 +36,13 @@ export default function Footer() {
       <Box textAlign={"center"} p={"5vh 0 5vh 0"}>
         <Heading p={"2% 0 1% 0"}>Clients</Heading>
         <Heading size={"md"}>Excellence Unchallanged</Heading>
-        <Text p={"1% 25% 4% 25%"}>
+        <Text p={["5% 10% 5% 10%", null, "1% 25% 4% 25%"]}>
           We have a very simple yet powerful mission: we believe in doing
           excellent work with great clients. From ideation to implementation, we
           communicate closely with everyone we work with to ensure great
           results. Check out some of our clients below.
         </Text>
-        <Flex>{Imagesdiv}</Flex>
+        <Flex flexDirection={["column", null, "row"]}>{Imagesdiv}</Flex>
       </Box>
     </>
   );

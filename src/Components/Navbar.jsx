@@ -3,16 +3,6 @@ import { Flex, HStack, Heading, Link, Spacer, Text } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
 
 export default function Navbar() {
-  // const [matches, setMatches] = useState(
-  //   window.matchMedia("(min-width: 768px)").matches
-  // );
-
-  // useEffect(() => {
-  //   window
-  //     .matchMedia("(min-width: 768px)")
-  //     .addEventListener("change", (e) => setMatches(e.matches));
-  // }, []);
-
   return (
     <>
       <Flex
@@ -34,26 +24,26 @@ export default function Navbar() {
         <Spacer />
         <HStack fontSize={"md"} spacing={"1.5rem"}>
           <Link as={ReactRouterLink} to="/">
-            <Text>home</Text>
+            <Text>Home</Text>
           </Link>
           <Link as={ReactRouterLink} to="/about">
-            <Text>about</Text>
+            <Text>About</Text>
           </Link>
           <Link as={ReactRouterLink} to="/buisness">
-            <Text>buisnesses</Text>
+            <Text>Buisnesses</Text>
           </Link>
           <Link as={ReactRouterLink} to="/investors">
-            <Text>investors</Text>
+            <Text>Investors</Text>
           </Link>
           <Link as={ReactRouterLink} to="/foundation">
-            <Text>foundation</Text>
+            <Text>Foundation</Text>
           </Link>
           <Link as={ReactRouterLink} to="/media">
-            <Text>media</Text>
+            <Text>Media</Text>
           </Link>
-          <Text>careers</Text>
+          <Text>Careers</Text>
           <Link as={ReactRouterLink} to="/contactus">
-            <Text>contact us</Text>
+            <Text>Contact us</Text>
           </Link>
         </HStack>
       </Flex>

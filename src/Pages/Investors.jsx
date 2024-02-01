@@ -1,4 +1,4 @@
-import { Box, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
 import "../assets/Paginate.css";
@@ -23,8 +23,11 @@ export default function Investors() {
 
   return (
     <>
-      <Box width={"50%"} margin={"auto"}>
-        <Box borderBottom={"solid white"}>
+      <Box
+        width={["90%", null, "50%"]}
+        margin={["1rem auto 2rem auto", null, "auto"]}
+      >
+        <Box margin={"auto"} borderBottom={"solid white"}>
           <Box>
             <Box
               width={"11rem"}
@@ -33,11 +36,19 @@ export default function Investors() {
               border={"solid white"}
             >
               <Heading size={"sm"}>Nexus foundation</Heading>
+
               <Text size={"sm"}>Formerly by nexus</Text>
             </Box>
           </Box>
         </Box>
-        <Items currentItems={currentItems} />
+        <Flex
+          width={["85%", null, "100%"]}
+          margin={["auto", null, 0]}
+          flexDirection={"column"}
+          alignItems={["center", null, "flex-start"]}
+        >
+          <Items currentItems={currentItems} />
+        </Flex>
         <ReactPaginate
           containerClassName={"pagination"}
           activeClassName={"active"}
@@ -57,7 +68,12 @@ export default function Investors() {
 function Items({ currentItems }) {
   return currentItems.map(({ data, date, link }) => (
     <>
-      <Box padding={"1rem 0 1rem 0"} borderBottom={"solid gray 1px"}>
+      <Box
+        margin={["auto", null, 0]}
+        padding={"1rem 0 1rem 0"}
+        borderBottom={"solid gray 1px"}
+        minWidth={"100%"}
+      >
         <Link fontStyle={"italic"} color={"#87ceeb"} href={link} isExternal>
           {data}
         </Link>

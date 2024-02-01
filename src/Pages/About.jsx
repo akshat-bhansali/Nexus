@@ -4,7 +4,7 @@ export default function About() {
   return (
     <Flex
       textAlign={"center"}
-      margin={"3rem 0 0 0"}
+      margin={["3rem 0 3rem 0", null, "3rem 0 0 0"]}
       justifyContent={"center"}
       flexDirection={"column"}
       alignItems={"center"}
@@ -18,7 +18,12 @@ export default function About() {
           borderRadius={"1rem"}
         ></Box>
       </Center>
-      <Heading size={"md"} color={"#BEB7A4"} width={"60%"} marginBottom={"5%"}>
+      <Heading
+        size={"md"}
+        color={"#BEB7A4"}
+        width={["80%", null, "60%"]}
+        marginBottom={"5%"}
+      >
         An exclusive connection to Italian artisans for more meaningful buying.
         Menswear and accessories crafted for you in numerous colours and refined
         materials.
@@ -77,29 +82,29 @@ export default function About() {
         Custom Made) (read more on Made to Measure)
       </Text>
 
-      <SimpleGrid columns={2} h={"80vh"} spacing={"0.5rem"}>
-        <Box h={"40vh"} width={"100%"}>
+      <SimpleGrid columns={2} h={["40vh", null, "80vh"]} spacing={"0.5rem"}>
+        <Box h={["20vh", null, "40vh"]} width={"100%"}>
           <img
             style={{ height: "100%", width: "100%", objectFit: "cover" }}
             src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
             alt="k"
           />
         </Box>
-        <Box h={"40vh"} width={"100%"}>
+        <Box h={["20vh", null, "40vh"]} width={"100%"}>
           <img
             style={{ height: "100%", width: "100%", objectFit: "cover" }}
             src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
             alt="p"
           />
         </Box>
-        <Box h={"40vh"} width={"100%"}>
+        <Box h={["20vh", null, "40vh"]} width={"100%"}>
           <img
             style={{ height: "100%", width: "100%", objectFit: "cover" }}
             src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
             alt="p"
           />
         </Box>
-        <Box h={"40vh"} width={"100%"}>
+        <Box h={["20vh", null, "40vh"]} width={"100%"}>
           <img
             style={{ height: "100%", width: "100%", objectFit: "cover" }}
             src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="

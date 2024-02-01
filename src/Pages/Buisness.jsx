@@ -34,12 +34,19 @@ export default function Buisness() {
       </Center>
       <Center>
         <SimpleGrid
+          templateAreas={[
+            `"img1" "img2" "b1" "b1stat" "b2" "b2stat"`,
+            null,
+            `"img1 img2"
+                  "b1 b1stat"
+                  "b2stat b2"`,
+          ]}
           columns={[1, null, 2]}
           width={"80%"}
           spacing={["20px", null, "0px"]}
           margin={"3rem 0 0 0"}
         >
-          <Center>
+          <Center gridArea={"img1"}>
             <img
               height={"80%"}
               width={"80%"}
@@ -49,7 +56,7 @@ export default function Buisness() {
               }
             />
           </Center>
-          <Center>
+          <Center gridArea={"img2"}>
             <img
               height={"80%"}
               width={"80%"}
@@ -60,7 +67,7 @@ export default function Buisness() {
             />
           </Center>
 
-          <Box p={"10%"}>
+          <Box p={"10%"} gridArea={"b1"}>
             <Heading size={"md"}>Buisness 1</Heading>
             <br />
             <Text>
@@ -82,7 +89,7 @@ export default function Buisness() {
             </Text>
           </Box>
 
-          <Center>
+          <Center gridArea={"b1stat"}>
             <StatGroup
               bgColor={"foreground"}
               color={"background"}
@@ -102,7 +109,6 @@ export default function Buisness() {
 
                 <StatHelpText>feb 2003 - jan 2024</StatHelpText>
               </Stat>
-              {/* <Divider /> */}
               <Stat>
                 <StatLabel>Monthly Profit</StatLabel>
                 <StatNumber>$5000</StatNumber>
@@ -115,7 +121,7 @@ export default function Buisness() {
             </StatGroup>
           </Center>
 
-          <Center>
+          <Center gridArea={"b2stat"}>
             <StatGroup
               bgColor={"foreground"}
               color={"background"}
@@ -150,7 +156,7 @@ export default function Buisness() {
             </StatGroup>
           </Center>
 
-          <Box p={"10%"}>
+          <Box p={"10%"} gridArea={"b2"}>
             <Heading size={"md"}>Buisness 2</Heading>
             <br />
             <Text>

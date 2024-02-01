@@ -4,12 +4,12 @@ import {
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
-  DrawerHeader,
   DrawerOverlay,
   Flex,
   Heading,
   IconButton,
   Link,
+  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
@@ -33,17 +33,39 @@ export default function NavbarMob() {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader bgColor={"foreground"}>drawer contents</DrawerHeader>
-          <DrawerBody bgColor={"foreground"}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Consequat nisl vel pretium lectus quam id. Semper quis lectus
-              nulla at volutpat diam ut venenatis. Dolor morbi non arcu risus
-              quis varius quam quisque. Massa ultricies mi quis hendrerit dolor
-              magna eget est lorem. Erat imperdiet sed euismod nisi porta.
-              Lectus vestibulum mattis ullamcorper velit.
-            </p>
+          {/* <DrawerHeader textAlign="center" bgColor={"foreground"}>
+            <Heading>Menu</Heading>
+          </DrawerHeader> */}
+          <DrawerBody
+            display={"flex"}
+            flexDirection={"column"}
+            justifyContent={"space-evenly"}
+            textAlign={"center"}
+            bgColor={"foreground"}
+            fontSize={"2xl"}
+          >
+            <Link as={ReactRouterLink} onClick={onClose} to="/">
+              <Text>Home</Text>
+            </Link>
+            <Link as={ReactRouterLink} onClick={onClose} to="/about">
+              <Text>About</Text>
+            </Link>
+            <Link as={ReactRouterLink} onClick={onClose} to="/buisness">
+              <Text>Buisnesses</Text>
+            </Link>
+            <Link as={ReactRouterLink} onClick={onClose} to="/investors">
+              <Text>Investors</Text>
+            </Link>
+            <Link as={ReactRouterLink} onClick={onClose} to="/foundation">
+              <Text>Foundation</Text>
+            </Link>
+            <Link as={ReactRouterLink} onClick={onClose} to="/media">
+              <Text>Media</Text>
+            </Link>
+            <Text>Careers</Text>
+            <Link as={ReactRouterLink} onClick={onClose} to="/contactus">
+              <Text>Contact us</Text>
+            </Link>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
