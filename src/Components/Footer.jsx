@@ -33,7 +33,7 @@ export default function Footer() {
   ));
   return (
     <>
-      <Box textAlign={"center"} p={"5vh 10% 5vh 10%"}>
+      <Box textAlign={"center"} p={"5vh 0 5vh 0"}>
         <Heading p={"2% 0 1% 0"}>Clients</Heading>
         <Heading size={"md"}>Excellence Unchallanged</Heading>
         <Text p={"1% 25% 4% 25%"}>

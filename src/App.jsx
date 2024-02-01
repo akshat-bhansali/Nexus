@@ -4,6 +4,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Footer2 from "./Components/Footer2";
 import { Outlet } from "react-router-dom";
 import "./assets/App.css";
+import NavbarMob from "./Components/NavbarMob";
 
 function App() {
   const breakpoints = {
@@ -28,6 +29,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <Box minHeight={"100vh"} color={"foreground"} bgColor={"background"}>
         <Navbar />
+        <NavbarMob />
         <Outlet />
         <Spacer />
         <Footer2 />

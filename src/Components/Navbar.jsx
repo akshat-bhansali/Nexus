@@ -28,7 +28,7 @@ export default function Navbar() {
         p={"0 4rem 0 3rem"}
         minWidth={"800px"}
       >
-        <Link to="/">
+        <Link as={ReactRouterLink} to="/">
           <Heading>logo</Heading>
         </Link>
         <Spacer />

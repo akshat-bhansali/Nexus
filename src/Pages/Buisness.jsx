@@ -3,6 +3,7 @@ import {
   Center,
   Flex,
   Heading,
+  Image,
   SimpleGrid,
   Stat,
   StatArrow,
@@ -88,7 +89,6 @@ export default function Buisness() {
               borderRadius={"20px"}
               p={"2rem"}
               width={"80%"}
-              height={"40%"}
             >
               <Stat m={"0 10% 0 0"}>
                 <StatLabel>Total Profit</StatLabel>
@@ -122,7 +122,6 @@ export default function Buisness() {
               borderRadius={"30px"}
               p={"2rem"}
               width={"80%"}
-              height={"40%"}
             >
               <Stat m={"0 10% 0 0"}>
                 <StatLabel>Total Profit</StatLabel>
@@ -182,7 +181,7 @@ export default function Buisness() {
         <Heading size={"md"} m={"7% 0 3% 0"}>
           Partner Brands
         </Heading>
-        <img src="/partner.png" width={"50%"} />
+        <Image src="/partner.png" width={["90%", null, "50%"]} />
       </Flex>
     </>
   );
