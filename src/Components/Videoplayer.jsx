@@ -18,7 +18,7 @@ export default function Videoplayer() {
           justifyContent={"center"}
         >
           <Heading zIndex={"3"} padding={"0 10%"}>
-            Hi this is react
+            We’re Fushion Lifestyles Dedicated to your Success
           </Heading>
         </Box>
 
