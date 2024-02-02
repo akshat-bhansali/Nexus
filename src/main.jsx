@@ -8,6 +8,7 @@ import Buisness from "./Pages/Buisness.jsx";
 import Foundation from "./Pages/Foundation.jsx";
 import Investors from "./Pages/Investors.jsx";
 import Media from "./Pages/Media.jsx";
+import Careers from "./Pages/Careers.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,20 +25,24 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "Buisness",
+        path: "/Buisness",
         element: <Buisness />,
       },
       {
-        path: "Foundation",
+        path: "/Foundation",
         element: <Foundation />,
       },
       {
-        path: "investors",
+        path: "/investors",
         element: <Investors />,
       },
       {
-        path: "Media",
+        path: "/Media",
         element: <Media />,
+      },
+      {
+        path: "/careers",
+        element: <Careers />,
       },
     ],
   },

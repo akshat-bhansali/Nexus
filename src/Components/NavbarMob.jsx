@@ -31,8 +31,8 @@ export default function NavbarMob() {
       </Flex>
       <Drawer onClose={onClose} isOpen={isOpen} size={"full"}>
         <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
+        <DrawerContent bgColor={"rgba(0, 0, 0, 0.6)"}>
+          <DrawerCloseButton color={"foreground"} />
           {/* <DrawerHeader textAlign="center" bgColor={"foreground"}>
             <Heading>Menu</Heading>
           </DrawerHeader> */}
@@ -42,7 +42,8 @@ export default function NavbarMob() {
             padding={"1rem 0 4rem 0"}
             justifyContent={"space-evenly"}
             textAlign={"center"}
-            bgColor={"foreground"}
+            bgColor={"rgba(0, 0, 0, 0.6)"}
+            color={"foreground"}
             fontSize={"2xl"}
           >
             <Link as={ReactRouterLink} onClick={onClose} to="/">
@@ -63,7 +64,9 @@ export default function NavbarMob() {
             <Link as={ReactRouterLink} onClick={onClose} to="/media">
               <Text>Media</Text>
             </Link>
-            <Text>Careers</Text>
+            <Link as={ReactRouterLink} onClick={onClose} to="/careers">
+              <Text>Careers</Text>
+            </Link>
             <Link as={ReactRouterLink} onClick={onClose} to="/contactus">
               <Text>Contact us</Text>
             </Link>

@@ -41,7 +41,9 @@ export default function Navbar() {
           <Link as={ReactRouterLink} to="/media">
             <Text>Media</Text>
           </Link>
-          <Text>Careers</Text>
+          <Link as={ReactRouterLink} to="/careers">
+            <Text>Careers</Text>
+          </Link>
           <Link as={ReactRouterLink} to="/contactus">
             <Text>Contact us</Text>
           </Link>
