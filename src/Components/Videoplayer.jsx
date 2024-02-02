@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 
 export default function Videoplayer() {
   return (
@@ -14,12 +14,15 @@ export default function Videoplayer() {
           h={"90vh"}
           minWidth={"400px"}
           display={"flex"}
-          alignItems={"center"}
+          flexDirection={"column"}
           justifyContent={"center"}
         >
           <Heading zIndex={"3"} padding={"0 10%"}>
-            We’re Fushion Lifestyles Dedicated to your Success
+            We’re Fushion Lifestyles
           </Heading>
+          <Text zIndex={"3"} padding={"0 10%"}>
+            We’re Fushion Lifestyles Dedicated to your Success
+          </Text>
         </Box>
 
         <video
