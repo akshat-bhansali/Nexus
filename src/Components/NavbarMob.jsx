@@ -39,6 +39,7 @@ export default function NavbarMob() {
           <DrawerBody
             display={"flex"}
             flexDirection={"column"}
+            padding={"3rem 0"}
             justifyContent={"space-evenly"}
             textAlign={"center"}
             bgColor={"foreground"}
