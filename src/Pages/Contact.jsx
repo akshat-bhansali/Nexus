@@ -19,7 +19,7 @@ export default function Contact() {
           borderRadius={"1rem"}
         ></Box>
       </Center>
-      <Box className="animatefade" padding={"5%"}>
+      <Box padding={"5%"}>
         <Flex justifyContent={"space-evenly"} flexWrap={"wrap"}>
           <Box
             margin={["0 0 3rem 0", null, "0 0 0 5%"]}

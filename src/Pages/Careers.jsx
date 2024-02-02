@@ -26,6 +26,8 @@ export default function Careers() {
           <Text>
             Explore remote-friendly, flexible opportunities and join our mission
             to make work life simpler, more pleasant and more productive.
+            Explore remote-friendly, flexible opportunities and join our mission
+            to make work life simpler, more pleasant and more productive.
           </Text>
           <br />
           <Link
