@@ -87,6 +87,7 @@ export default function Products() {
         alignItems={"center"}
         justifyContent={"space-between"}
         marginBottom={"4rem"}
+        gap={"10px"}
       >
         <Heading>Products</Heading>
         <Input
