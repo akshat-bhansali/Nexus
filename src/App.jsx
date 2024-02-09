@@ -5,6 +5,7 @@ import Footer2 from "./Components/Footer2";
 import { Outlet } from "react-router-dom";
 import "./assets/App.css";
 import NavbarMob from "./Components/NavbarMob";
+import { defineStyleConfig } from "@chakra-ui/react";
 
 function App() {
   const breakpoints = {
@@ -15,19 +16,25 @@ function App() {
     xl: "1200px",
     "2xl": "1536px",
   };
+  const Heading = defineStyleConfig({
+    baseStyle: {
+      fontFamily: "open-sans,sans-serif",
+    },
+  });
   const colors = {
     foreground: "#F7F9F7",
     background: "#03120e",
   };
-  const fonts = {
-    body: "Tahoma",
-    heading: "Courier New",
-  };
-  const theme = extendTheme({ colors, fonts, breakpoints });
+  const theme = extendTheme({ colors, breakpoints, components: { Heading } });
 
   return (
     <ChakraProvider theme={theme}>
-      <Box minHeight={"100vh"} color={"foreground"} bgColor={"background"}>
+      <Box
+        fontFamily={"open-sans,sans-serif"}
+        minHeight={"100vh"}
+        color={"foreground"}
+        bgColor={"background"}
+      >
         <Navbar />
         <NavbarMob />
         <Outlet />

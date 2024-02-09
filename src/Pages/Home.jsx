@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <Box className="animatefade">
       <Videoplayer />
-      <Textcolumn
+      {/* <Textcolumn
         thisText={
           "lorem sfkn dsfkdsfnjk fsdnkfdsnk fjkdssfjndd dfsnfdndsf ksdfnlorem sfkn dsfkdsfnjk fsdnkfdsnk fjkdssfjndd dfsnfdndsf ksdfnlorem sfkn dsfkdsfnjk fsdnkfdsnk fjkdssfjndd dfsnfdndsf ksdflorem sfkn dsfkdsfnjk fsdnkfdsnk fjkdssfjndd dfsnfdndsf ksdfn"
         }
@@ -37,7 +37,7 @@ export default function Home() {
         thisHeading={"Hot off the press"}
         thisText={"do something for free bruh"}
       />
-      <Grid4 />
+      <Grid4 /> */}
       <Footer />
     </Box>
   );

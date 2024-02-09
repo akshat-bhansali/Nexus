@@ -52,6 +52,9 @@ export default function NavbarMob() {
             <Link as={ReactRouterLink} onClick={onClose} to="/about">
               <Text>About</Text>
             </Link>
+            <Link as={ReactRouterLink} to="/products">
+              <Text>Products</Text>
+            </Link>
             <Link as={ReactRouterLink} onClick={onClose} to="/buisness">
               <Text>Buisnesses</Text>
             </Link>
