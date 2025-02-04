@@ -20,13 +20,11 @@ export default function Map({ height, width }) {
         >
           <Heading size={"lg"}>Visit us in store</Heading>
           <br />
-          <Text>30 Lamb&apos;s Conduit Street</Text>
-          <Text>London, WC1N 3LE</Text>
-          <Text>Monday - Saturday 11am - 7pm</Text>
-          <Text> Walk-ins & Appointments Welcome</Text>
+          <Text>Shop no 17, 11, Coal Bunder Rd, opposite reti makan, Darukhana, Byculla, Mumbai, Maharashtra 400010</Text>
+          <Text>Monday - Saturday 10:30am - 7:30pm</Text>
           <br />
           <br />
-          <Link href="https://maps.app.goo.gl/rj5Bz98xHSqjJ3Cm7" isExternal>
+          <Link href="https://maps.app.goo.gl/273grnt2gCDfKKpE7?g_st=iwb" isExternal>
             <Button color={"foreground"} bgColor={"background"} width={"30%"}>
               Directions
             </Button>
@@ -34,12 +32,12 @@ export default function Map({ height, width }) {
         </Box>
         <iframe
           style={{ border: "5px solid #F7F9F7" }}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14244.302228703269!2d81.02024255!3d26.8057227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfb177ba59213%3A0xfd12dad33afbc85d!2sPhoenix%20Palassio!5e0!3m2!1sen!2sin!4v1706482460883!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.0285644149703!2d72.8470085746345!3d18.974345855157082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cff3826cba3d%3A0x3b589a097fa16413!2sMaktaba%20Manufacturers!5e0!3m2!1sen!2sin!4v1738588151029!5m2!1sen!2sinn"
           width="100%"
           height="100%"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </Box>
+   </Box>
     </>
   );
 }

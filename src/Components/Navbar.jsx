@@ -32,20 +32,8 @@ export default function Navbar() {
           <Link as={ReactRouterLink} to="/products">
             <Text>Products</Text>
           </Link>
-          <Link as={ReactRouterLink} to="/buisness">
-            <Text>Buisnesses</Text>
-          </Link>
-          <Link as={ReactRouterLink} to="/investors">
-            <Text>Investors</Text>
-          </Link>
           <Link as={ReactRouterLink} to="/foundation">
             <Text>Foundation</Text>
-          </Link>
-          <Link as={ReactRouterLink} to="/media">
-            <Text>Media</Text>
-          </Link>
-          <Link as={ReactRouterLink} to="/careers">
-            <Text>Careers</Text>
           </Link>
           <Link as={ReactRouterLink} to="/contactus">
             <Text>Contact us</Text>

@@ -2,353 +2,122 @@
   "products": [
     {
       "id": 1,
-      "name": "Men's Classic T-Shirt",
-      "description": "A classic crew-neck t-shirt for men, made from soft and breathable cotton fabric. Suitable for everyday wear and available in various colors and sizes.",
-      "price": 19.99,
-      "img": "https://source.unsplash.com/random/200x200/?t-shirt"
-    },
-    {
-      "id": 2,
-      "name": "Women's Running Shoes",
-      "description": "Lightweight and supportive running shoes designed specifically for women. Features responsive cushioning and a breathable mesh upper for optimal comfort and performance.",
-      "price": 59.99,
-      "img": "https://source.unsplash.com/random/200x200/?running-shoes"
-    },
-    {
-      "id": 3,
-      "name": "Unisex Backpack",
-      "description": "A versatile backpack suitable for both men and women. Features multiple compartments for organizing belongings, padded shoulder straps for comfort, and a durable construction.",
-      "price": 39.99,
-      "img": "https://source.unsplash.com/random/200x200/?backpack"
-    },
-    {
-      "id": 4,
-      "name": "Men's Leather Wallet",
-      "description": "A stylish and functional leather wallet for men. Features multiple card slots, a bill compartment, and a sleek design that fits comfortably in pockets.",
-      "price": 29.99,
-      "img": "https://source.unsplash.com/random/200x200/?wallet"
-    },
-    {
-      "id": 5,
-      "name": "Women's Sunglasses",
-      "description": "Fashionable sunglasses for women, designed to provide both style and UV protection. Features polarized lenses and durable frames.",
-      "price": 39.99,
-      "img": "https://source.unsplash.com/random/200x200/?sunglasses"
-    },
-    {
-      "id": 6,
-      "name": "Fitness Tracker",
-      "description": "A wearable device that tracks fitness metrics such as steps taken, distance traveled, and calories burned. Features heart rate monitoring and smartphone connectivity.",
-      "price": 79.99,
-      "img": "https://source.unsplash.com/random/200x200/?fitness-tracker"
-    },
-    {
-      "id": 7,
-      "name": "Wireless Headphones",
-      "description": "High-quality wireless headphones for an immersive audio experience. Features Bluetooth connectivity, long battery life, and noise-cancellation technology.",
-      "price": 99.99,
-      "img": "https://source.unsplash.com/random/200x200/?headphones"
-    },
-    {
-      "id": 8,
-      "name": "Smartwatch",
-      "description": "A versatile smartwatch with fitness tracking, notifications, and customizable watch faces. Features a touchscreen display and long-lasting battery.",
-      "price": 129.99,
-      "img": "https://source.unsplash.com/random/200x200/?smartwatch"
-    },
-    {
-      "id": 9,
-      "name": "Portable Bluetooth Speaker",
-      "description": "Compact and portable Bluetooth speaker for on-the-go music enjoyment. Features a built-in rechargeable battery and high-quality sound output.",
-      "price": 49.99,
-      "img": "https://source.unsplash.com/random/200x200/?bluetooth-speaker"
-    },
-    {
-      "id": 10,
-      "name": "Reusable Water Bottle",
-      "description": "An eco-friendly water bottle made from durable and BPA-free materials. Features a leak-proof design and convenient carry loop.",
-      "price": 14.99,
-      "img": "https://source.unsplash.com/random/200x200/?water-bottle"
-    },
-    {
-      "id": 11,
-      "name": "Yoga Mat",
-      "description": "A comfortable and non-slip yoga mat for practicing yoga and other floor exercises. Features a textured surface for enhanced grip and cushioning.",
-      "price": 24.99,
-      "img": "https://source.unsplash.com/random/200x200/?yoga-mat"
-    },
-    {
-      "id": 12,
-      "name": "Travel Backpack",
-      "description": "Durable and spacious backpack designed for travel adventures. Features multiple compartments, padded shoulder straps, and a water-resistant exterior.",
-      "price": 49.99,
-      "img": "https://source.unsplash.com/random/200x200/?travel-backpack"
+      "name": "Piano Hinges",
+      "description": "Piano Hinges Customizable, laser-cut hinges available in MS, SS, and Brass, designed for precision and durability in various applications.",
+      "img": "./products/pianoHinges/img1.jpg",
+      "img2": "./products/pianoHinges/img2.jpg",
+      "img3": "./products/pianoHinges/img3.png",
+      "img4": "./products/pianoHinges/img4.jpeg"
     },
     {
       "id": 13,
-      "name": "Men's Dress Shoes",
-      "description": "Classic and stylish dress shoes for men, suitable for formal occasions and everyday wear. Features genuine leather construction and comfortable insoles.",
-      "price": 69.99,
-      "img": "https://source.unsplash.com/random/200x200/?dress-shoes"
+      "name": "Stainless Steel Piano Hinges",
+      "description": "SS304, SS316, SS316L, SS202, SS409, and more. We offer a range of stainless steel grades to meet your specific needs and requirements.",
+      "img": "./products/ssPiano/img1.jpeg",
+      "img3": "./products/ssPiano/img2.jpeg"
     },
     {
       "id": 14,
-      "name": "Women's Scarf",
-      "description": "Fashionable scarf for women, made from soft and lightweight fabric. Adds a stylish accent to any outfit and provides warmth during cooler weather.",
-      "price": 19.99,
-      "img": "https://source.unsplash.com/random/200x200/?scarf"
+      "name": "Mild Steel Piano Hinges",
+      "description": "Available in both plated and raw finishes, depending on the customer’s preference. We ensure durable and high-quality hinges for various applications.",
+      "img": "./products/msPiano/img1.jpeg",
+      "img3": "./products/msPiano/img2.jpeg"
     },
     {
       "id": 15,
-      "name": "Leather Briefcase",
-      "description": "A classic leather briefcase for professionals, perfect for carrying documents, laptops, and other essentials. Features multiple compartments and a detachable shoulder strap.",
-      "price": 89.99,
-      "img": "https://source.unsplash.com/random/200x200/?briefcase"
+      "name": "Brass Piano Hinges",
+      "description": " Known for their corrosion resistance and elegant appearance, our brass piano hinges are ideal for high-end furniture, cabinetry, and decorative uses.",
+      "img": "./products/brassPiano/img1.jpeg",
+      "img3": "./products/brassPiano/img3.jpeg",
+      "img4": "./products/brassPiano/img2.jpeg"
     },
     {
       "id": 16,
-      "name": "Running Jacket",
-      "description": "Lightweight and breathable running jacket for outdoor workouts. Features moisture-wicking fabric, reflective details, and zippered pockets.",
-      "price": 49.99,
-      "img": "https://source.unsplash.com/random/200x200/?running-jacket"
+      "name": "Aluminium Piano Hinges",
+      "description": "Lightweight yet strong, our aluminum piano hinges are perfect for applications where both strength and reduced weight are essential. Available in custom sizes and finishes to suit your needs.",
+      "img": "./products/aluPiano/img1.jpeg",
+      "img3": "./products/aluPiano/img2.jpeg"
     },
     {
-      "id": 17,
-      "name": "Wireless Mouse",
-      "description": "Ergonomic wireless mouse for comfortable computing. Features precise tracking, customizable buttons, and long battery life.",
-      "price": 29.99,
-      "img": "https://source.unsplash.com/random/200x200/?wireless-mouse"
+      "id": 2,
+      "name": "Double Slot Channel & Brackets",
+      "description": "Durable, adjustable, and perfect for creating strong shelving systems. Made from high-quality mild steel (MS) for versatile applications.",
+      "img": "./products/doubleSlot/img1.png",
+      "img2": "./products/doubleSlot/img2.jpg",
+      "img3": "./products/doubleSlot/img3.png"
     },
     {
-      "id": 18,
-      "name": "Desk Lamp",
-      "description": "Sleek and modern desk lamp for brightening up your workspace. Features adjustable brightness levels and a flexible arm for directing light.",
-      "price": 34.99,
-      "img": "https://source.unsplash.com/random/200x200/?desk-lamp"
+      "id": 4,
+      "name": "L Type MS Door Gear with Sliding Rollers and Fittings",
+      "description": "Smooth, durable sliding mechanisms designed for reliable door operation, available in MS and aluminum, crafted for various applications.",
+      "img": "./products/lTypeMs/img1.png",
+      "img2": "./products/lTypeMs/img2.png",
+      "img3": "./products/lTypeMs/img3.png",
+      "img4": "./products/lTypeMs/img4.png",
+      "img5": "./products/lTypeMs/img5.png",
+      "img6": "./products/lTypeMs/img6.png"
     },
     {
-      "id": 19,
-      "name": "Coffee Mug",
-      "description": "Classic ceramic coffee mug for enjoying your favorite hot beverages. Features a comfortable handle and dishwasher-safe design.",
-      "price": 9.99,
-      "img": "https://source.unsplash.com/random/200x200/?coffee-mug"
+      "id": 5,
+      "name": "C Type Door Gear with Sliding Rollers and Fittings",
+      "description": "Smooth, durable sliding mechanisms designed for reliable door operation, available in MS and aluminum, crafted for various applications.",
+      "img": "./products/cType/img1.png",
+      "img3": "./products/cType/img3.png",
+      "img4": "./products/cType/img4.png",
+      "img6": "./products/cType/img6.png"
     },
     {
-      "id": 20,
-      "name": "Sneakers",
-      "description": "Versatile sneakers suitable for casual wear and athletic activities. Features a cushioned sole and breathable upper for all-day comfort.",
-      "price": 49.99,
-      "img": "https://source.unsplash.com/random/200x200/?sneakers"
+      "id": 9,
+      "name": "L Type Door Gear with Sliding Rollers and Fittings",
+      "description": "Smooth, durable sliding mechanisms designed for reliable door operation, available in MS and aluminum, crafted for various applications.",
+      "img": "./products/lType/img1.png",
+      "img2": "./products/lType/img2.png",
+      "img3": "./products/lType/img3.png",
+      "img4": "./products/lType/img4.png",
+      "img5": "./products/lType/img5.png",
+      "img6": "./products/lType/img6.png"
     },
     {
-      "id": 21,
-      "name": "Digital Camera",
-      "description": "Compact digital camera for capturing high-quality photos and videos. Features a zoom lens, LCD screen, and various shooting modes.",
-      "price": 199.99,
-      "img": "https://source.unsplash.com/random/200x200/?camera"
+      "id": 6,
+      "name": "SS Disco Channel",
+      "description": "Reliable and versatile channel system for secure glass and shelf fittings, crafted in durable SS.",
+      "img": "./products/ssDisco/img1.png",
+      "img2": "./products/ssDisco/img2.png",
+      "img3": "./products/ssDisco/img3.png"
     },
     {
-      "id": 22,
-      "name": "Backpacking Tent",
-      "description": "Lightweight and durable tent for backpacking adventures. Features easy setup, waterproof construction, and ample interior space.",
-      "price": 99.99,
-      "img": "https://source.unsplash.com/random/200x200/?tent"
+      "id": 8,
+      "name": "MS Disco Channel",
+      "description": "Reliable and versatile channel system for secure glass and shelf fittings, crafted in durable MS and zinc-coated finishes.",
+      "img": "./products/msDisco/img1.png",
+      "img2": "./products/msDisco/img2.png",
+      "img3": "./products/msDisco/img3.png",
+      "img4": "./products/msDisco/img4.png"
     },
     {
-      "id": 23,
-      "name": "Hiking Boots",
-      "description": "Sturdy and supportive hiking boots for outdoor adventures. Features waterproof construction, traction outsoles, and cushioned footbeds.",
-      "price": 79.99,
-      "img": "https://source.unsplash.com/random/200x200/?hiking-boots"
+      "id": 11,
+      "name": "Z & C Channels",
+      "description": "Strong and versatile structural supports, available in MS and SS, perfect for construction and industrial applications.",
+      "img": "./products/zAndC/img1.png",
+      "img2": "./products/zAndC/img2.jpg",
+      "img3": "./products/zAndC/img3.jpeg",
+      "img4": "./products/zAndC/img4.jpeg"
     },
     {
-      "id": 24,
-      "name": "Rain Jacket",
-      "description": "Waterproof and breathable rain jacket for staying dry in wet weather. Features sealed seams, adjustable hood, and ventilation zippers.",
-      "price": 69.99,
-      "img": "https://source.unsplash.com/random/200x200/?rain-jacket"
+      "id": 12,
+      "name": "Cable Tray",
+      "description": "Durable and reliable cable management solutions, designed to support and organize cables efficiently. Available in MS and customizable to meet your needs.",
+      "img": "./products/cableTray/img1.png",
+      "img3": "./products/cableTray/img3.png",
+      "img4": "./products/cableTray/img4.png"
     },
     {
-      "id": 25,
-      "name": "Duffel Bag",
-      "description": "Spacious duffel bag for travel, gym, and outdoor activities. Features multiple compartments, carry handles, and a removable shoulder strap.",
-      "price": 39.99,
-      "img": "https://source.unsplash.com/random/200x200/?duffel-bag"
-    },
-    {
-      "id": 26,
-      "name": "Laptop Sleeve",
-      "description": "Protective laptop sleeve for safely transporting your laptop. Features a padded interior and zippered closure.",
-      "price": 19.99,
-      "img": "https://source.unsplash.com/random/200x200/?laptop-sleeve"
-    },
-    {
-      "id": 27,
-      "name": "Office Chair",
-      "description": "Ergonomic office chair for comfortable and productive work sessions. Features adjustable height, lumbar support, and swivel functionality.",
-      "price": 149.99,
-      "img": "https://source.unsplash.com/random/200x200/?office-chair"
-    },
-    {
-      "id": 28,
-      "name": "Graphic T-Shirt",
-      "description": "Stylish graphic t-shirt featuring unique designs and comfortable fabric. Adds a pop of personality to your casual wardrobe.",
-      "price": 24.99,
-      "img": "https://source.unsplash.com/random/200x200/?graphic-t-shirt"
-    },
-    {
-      "id": 29,
-      "name": "Sunhat",
-      "description": "Wide-brimmed sunhat for protecting your face and neck from the sun's rays. Features UPF sun protection and adjustable chin strap.",
-      "price": 14.99,
-      "img": "https://source.unsplash.com/random/200x200/?sunhat"
-    },
-    {
-      "id": 30,
-      "name": "Running Shorts",
-      "description": "Lightweight and breathable running shorts for optimal performance. Features moisture-wicking fabric and built-in briefs for support.",
-      "price": 29.99,
-      "img": "https://source.unsplash.com/random/200x200/?running-shorts"
-    },
-    {
-      "id": 31,
-      "name": "Stainless Steel Water Bottle",
-      "description": "Durable stainless steel water bottle for staying hydrated on the go. Features a leak-proof lid and double-wall insulation.",
-      "price": 19.99,
-      "img": "https://source.unsplash.com/random/200x200/?stainless-steel-water-bottle"
-    },
-    {
-      "id": 32,
-      "name": "Messenger Bag",
-      "description": "Versatile messenger bag for carrying essentials during daily commutes or travel. Features multiple pockets, adjustable shoulder strap, and durable construction.",
-      "price": 59.99,
-      "img": "https://source.unsplash.com/random/200x200/?messenger-bag"
-    },
-    {
-      "id": 33,
-      "name": "Camping Stove",
-      "description": "Portable camping stove for cooking meals outdoors. Features a compact design, adjustable flame, and wind-resistant burner.",
-      "price": 49.99,
-      "img": "https://source.unsplash.com/random/200x200/?camping-stove"
-    },
-    {
-      "id": 34,
-      "name": "Denim Jeans",
-      "description": "Classic denim jeans for men and women, featuring a comfortable fit and timeless style. Made from durable denim fabric and available in various washes.",
-      "price": 39.99,
-      "img": "https://source.unsplash.com/random/200x200/?denim-jeans"
-    },
-    {
-      "id": 35,
-      "name": "Beach Towel",
-      "description": "Large and absorbent beach towel for lounging by the pool or ocean. Features vibrant colors and soft, plush fabric.",
-      "price": 24.99,
-      "img": "https://source.unsplash.com/random/200x200/?beach-towel"
-    },
-    {
-      "id": 36,
-      "name": "Wireless Keyboard",
-      "description": "Compact and ergonomic wireless keyboard for comfortable typing. Features a slim design, quiet keys, and long battery life.",
-      "price": 49.99,
-      "img": "https://source.unsplash.com/random/200x200/?wireless-keyboard"
-    },
-    {
-      "id": 37,
-      "name": "Gym Bag",
-      "description": "Spacious gym bag for storing workout clothes, shoes, and accessories. Features multiple compartments, ventilated shoe compartment, and adjustable shoulder strap.",
-      "price": 29.99,
-      "img": "https://source.unsplash.com/random/200x200/?gym-bag"
-    },
-    {
-      "id": 38,
-      "name": "Polaroid Camera",
-      "description": "Instant film camera for capturing memories on the go. Features a retro design, built-in flash, and self-timer function.",
-      "price": 79.99,
-      "img": "https://source.unsplash.com/random/200x200/?polaroid-camera"
-    },
-    {
-      "id": 39,
-      "name": "Leather Belt",
-      "description": "Classic leather belt for men and women, perfect for completing any outfit. Features a durable buckle and adjustable length.",
-      "price": 29.99,
-      "img": "https://source.unsplash.com/random/200x200/?leather-belt"
-    },
-    {
-      "id": 40,
-      "name": "Travel Mug",
-      "description": "Insulated travel mug for keeping your favorite beverages hot or cold while on the go. Features a spill-proof lid and ergonomic design.",
-      "price": 12.99,
-      "img": "https://source.unsplash.com/random/200x200/?travel-mug"
-    },
-    {
-      "id": 41,
-      "name": "Smartphone Tripod",
-      "description": "Adjustable smartphone tripod for capturing steady photos and videos. Features a flexible design and universal phone mount.",
-      "price": 14.99,
-      "img": "https://source.unsplash.com/random/200x200/?smartphone-tripod"
-    },
-    {
-      "id": 42,
-      "name": "Tennis Shoes",
-      "description": "Durable and supportive tennis shoes for players of all levels. Features a non-marking outsole, cushioned midsole, and breathable upper.",
-      "price": 49.99,
-      "img": "https://source.unsplash.com/random/200x200/?tennis-shoes"
-    },
-    {
-      "id": 43,
-      "name": "Running Hat",
-      "description": "Lightweight and breathable running hat for sun protection and comfort. Features moisture-wicking fabric and an adjustable strap for a personalized fit.",
-      "price": 19.99,
-      "img": "https://source.unsplash.com/random/200x200/?running-hat"
-    },
-    {
-      "id": 44,
-      "name": "Portable Charger",
-      "description": "Compact and portable charger for charging smartphones, tablets, and other USB devices on the go. Features fast charging technology and multiple charging ports.",
-      "price": 29.99,
-      "img": "https://source.unsplash.com/random/200x200/?portable-charger"
-    },
-    {
-      "id": 45,
-      "name": "Yoga Blocks",
-      "description": "Foam yoga blocks for providing support and stability during yoga practice. Features lightweight construction and textured surface for grip.",
-      "price": 19.99,
-      "img": "https://source.unsplash.com/random/200x200/?yoga-blocks"
-    },
-    {
-      "id": 46,
-      "name": "Winter Gloves",
-      "description": "Warm and waterproof winter gloves for cold weather activities. Features insulated lining, adjustable wrist strap, and touchscreen-compatible fingertips.",
-      "price": 24.99,
-      "img": "https://source.unsplash.com/random/200x200/?winter-gloves"
-    },
-    {
-      "id": 47,
-      "name": "Cycling Helmet",
-      "description": "Safety-certified cycling helmet for protection during bike rides. Features adjustable straps, ventilation channels, and impact-absorbing foam.",
-      "price": 39.99,
-      "img": "https://source.unsplash.com/random/200x200/?cycling-helmet"
-    },
-    {
-      "id": 48,
-      "name": "Messenger Bag",
-      "description": "Stylish and functional messenger bag for carrying essentials on the go. Features a padded laptop compartment, organizational pockets, and adjustable shoulder strap.",
-      "price": 59.99,
-      "img": "https://source.unsplash.com/random/200x200/?messenger-bag"
-    },
-    {
-      "id": 49,
-      "name": "Canvas Backpack",
-      "description": "Casual canvas backpack for everyday use and outdoor adventures. Features a spacious main compartment, front zippered pocket, and adjustable shoulder straps.",
-      "price": 34.99,
-      "img": "https://source.unsplash.com/random/200x200/?canvas-backpack"
-    },
-    {
-      "id": 50,
-      "name": "Rain Boots",
-      "description": "Waterproof rain boots for staying dry and comfortable in wet weather. Features a durable rubber construction and slip-resistant sole.",
-      "price": 44.99,
-      "img": "https://source.unsplash.com/random/200x200/?rain-boots"
+      "id": 3,
+      "name": "Wall Brackets",
+      "description": "Strong and versatile wall mounting solutions, perfect for supporting shelves, displays, and more. Crafted from durable MS and SS, with customization options available to meet your specific needs.",
+      "img": "./products/wallBrackets/img1.jpeg",
+      "img2": "./products/wallBrackets/img2.jpeg",
+      "img3": "./products/wallBrackets/img3.jpeg"
     }
   ]
 }

@@ -8,7 +8,7 @@ export default function Videoplayer() {
           position={"absolute"}
           zIndex={"1"}
           bgColor={"rgba(218, 213, 205, 0.5)"}
-          color={"white"}
+          color={"black"}
           right={"0"}
           w={["100%", null, "50%"]}
           h={"90vh"}
@@ -17,11 +17,11 @@ export default function Videoplayer() {
           flexDirection={"column"}
           justifyContent={"center"}
         >
-          <Heading zIndex={"3"} padding={"0 10%"}>
-            We’re Fushion Lifestyles
+          <Heading zIndex={"3"} padding={"0 10%"} textAlign={"center"}>
+            Maktaba Manufacturers
           </Heading>
-          <Text zIndex={"3"} padding={"0 10%"}>
-            We’re Fushion Lifestyles Dedicated to your Success
+          <Text zIndex={"3"} padding={"0 10%"} textAlign={"center"}>
+            Expert Laser Cutting Services
           </Text>
         </Box>
 

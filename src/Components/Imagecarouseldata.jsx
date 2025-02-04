@@ -20,13 +20,14 @@ export default function Imagecarouseldata({ Links }) {
   let Images = Links.map(({ value, data }) => (
     <>
       <Flex key={data} justifyContent={"center"} h={"50vh"}>
-        <img
-          height={"auto"}
-          width={"100%"}
-          style={{ objectFit: "cover" }}
-          src={value}
-          alt={data}
-        />
+      <img
+  height={"50vh"}
+  width={"auto"}
+  style={{ objectFit: "contain", maxWidth: "100%" }}
+  src={value}
+  alt={data}
+/>
+
       </Flex>
       {data && (
         <Text fontWeight={"800"} textAlign={"center"}>
@@ -38,7 +39,7 @@ export default function Imagecarouseldata({ Links }) {
 
   return (
     <>
-      <Carousel responsive={responsive} infinite={true}>
+      <Carousel responsive={responsive} infinite={true} autoPlay={true}  autoPlaySpeed={3000}>
         {Images}
       </Carousel>
     </>
