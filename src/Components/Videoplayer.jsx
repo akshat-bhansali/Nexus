@@ -18,16 +18,15 @@ export default function Videoplayer() {
           justifyContent={"center"}
         >
           <Heading zIndex={"3"} padding={"0 10%"} textAlign={"center"}>
-            Maktaba Manufacturers
+            Expert Laser Cutting Services
           </Heading>
           <Text zIndex={"3"} padding={"0 10%"} textAlign={"center"}>
-            Expert Laser Cutting Services
+            Maktaba Manufacturers
           </Text>
         </Box>
 
         <video
           style={{ height: "90vh", width: "100%", objectFit: "cover" }}
-          // src="/production_id_4818368 (2160p).mp4"
           src="video.mp4"
           type="video/mp4"
           autoPlay

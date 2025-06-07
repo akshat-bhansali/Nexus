@@ -1,4 +1,4 @@
-import { Flex, HStack, Heading, Link, Spacer, Text } from "@chakra-ui/react";
+import { Flex, HStack, Heading, Link, Spacer, Text, Box } from "@chakra-ui/react";
 // import { useEffect, useState } from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
 
@@ -19,7 +19,13 @@ export default function Navbar() {
         minWidth={"800px"}
       >
         <Link as={ReactRouterLink} to="/">
-          <Heading>logo</Heading>
+        <Box h={"18vh"} w={"10vw"}>
+        <img
+            style={{ height: "100%", width: "100%" }}
+            src="./logo.png"
+            alt="logo"
+          />
+          </Box>
         </Link>
         <Spacer />
         <HStack fontSize={"md"} spacing={"1.5rem"}>

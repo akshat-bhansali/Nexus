@@ -1,5 +1,6 @@
 import { HamburgerIcon } from "@chakra-ui/icons";
 import {
+  Box,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
@@ -25,7 +26,13 @@ export default function NavbarMob() {
         p={"1rem"}
       >
         <Link as={ReactRouterLink} to="/">
-          <Heading>logo</Heading>
+        <Box h={"18vh"} w={"10vw"}>
+        <img
+            style={{ height: "100%", width: "100%" }}
+            src="./logo.png"
+            alt="logo"
+          />
+          </Box>
         </Link>
         <IconButton icon={<HamburgerIcon />} onClick={onOpen} />
       </Flex>
@@ -55,8 +62,8 @@ export default function NavbarMob() {
             <Link as={ReactRouterLink} onClick={onClose} to="/products">
               <Text>Products</Text>
             </Link>
-            <Link as={ReactRouterLink} onClick={onClose} to="/foundation">
-              <Text>Foundation</Text>
+            <Link as={ReactRouterLink} onClick={onClose} to="/services">
+              <Text>Services</Text>
             </Link>
             <Link as={ReactRouterLink} onClick={onClose} to="/contactus">
               <Text>Contact us</Text>
