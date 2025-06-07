@@ -72,14 +72,31 @@ export default function Services() {
       </Box>
 
       <SimpleGrid columns={[1, 3]} spacing="2rem" px="15%" pb="4rem">
-        {allServices.map((item, idx) => (
-          <VStack key={idx} spacing="1rem" textAlign="center">
-            <Image src={item.value} alt={item.title} boxSize="250px" objectFit="cover" />
-            <Heading size="md">{item.title}</Heading>
-            <Text fontSize="sm">{item.data}</Text>
-          </VStack>
-        ))}
-      </SimpleGrid>
+  {allServices.map((item, idx) => (
+    <Box
+      key={idx}
+      p="1.5rem"
+      borderRadius="lg"
+      textAlign="center"
+      bg="rgba(255, 255, 255, 0.1)"
+      _hover={{
+        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+        backdropFilter: "blur(8px)",
+        bg: "rgba(255, 255, 255, 0.2)",
+        transform: "scale(1.02)",
+        transition: "all 0.3s ease-in-out",
+      }}
+      transition="all 0.3s ease-in-out"
+    >
+      <VStack spacing="1rem">
+        <Image src={item.value} alt={item.title} boxSize="250px" objectFit="cover" borderRadius="md" />
+        <Heading size="md">{item.title}</Heading>
+        <Text fontSize="sm">{item.data}</Text>
+      </VStack>
+    </Box>
+  ))}
+</SimpleGrid>
+
     </>
   );
 }
