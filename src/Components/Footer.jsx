@@ -3,7 +3,7 @@ import { Text, Box, Heading, Flex } from "@chakra-ui/react";
 export default function Footer() {
   let ImgList = [
     {
-      imgsrc: "/Home1.jpeg",
+      imgsrc: "/Home1.jpg",
       h1: "Precision Laser Cutting",
       data: "We specialize in high-accuracy laser cutting, delivering intricate designs with clean edges on a variety of materials. Our advanced technology ensures precision, consistency, and superior quality in every cut.",
     },

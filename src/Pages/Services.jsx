@@ -8,7 +8,7 @@ export default function Services() {
       data: "Specializing in laser cutting for both brass and aluminum. Our advanced technology ensures smooth and accurate cuts for these materials.",
     },
     {
-      title: "Advanced Laser Cutting for Metals (SS, MS, Aluminum, Brass)",
+      title: "Advanced Laser Cutting (SS, MS, Aluminum, Brass)",
       value: "./services/profile2.jpg",
       data: "Offering top-notch laser cutting for stainless steel, mild steel, aluminum, and brass. We deliver high-quality cuts with unmatched precision.",
     },
@@ -18,9 +18,9 @@ export default function Services() {
       data: "Providing expert laser cutting solutions for stainless steel. Our high-tech machines guarantee precise and clean cuts for all your requirements.",
     },
     {
-      title: "Precision Metal Cutting Solutions",
+      title: "Precision Cutting Solutions",
       value: "./services/industrial1.jpg",
-      data: "We specialize in high-accuracy laser cutting for a variety of metals. Our services ensure clean, sharp cuts for precise results.",
+      data: "We specialize in high-accuracy laser cutting for a variety of different metals. Our services ensure clean and sharp cuts for precise results.",
     },
     {
       title: "Metal Fabrication",
@@ -40,12 +40,12 @@ export default function Services() {
     {
       title: "Mild Steel Grill & Mesh",
       value: "./services/jaali1.jpg",
-      data: "We offer precision cutting for mild steel grills and mesh (jaali). Our services ensure perfect cuts for your architectural or design needs.",
+      data: "We offer precision cutting for mild steel grills and mesh also known as jaali. Our services ensure perfect cuts for your architectural or design needs.",
     },
     {
       title: "Custom Crafts",
       value: "./services/customCrafts.jpg",
-      data: "From personalized keychains to tailor-made nameplates and custom industrial parts — we can laser cut whatever you imagine. Just share your design or idea, and we’ll turn it into reality with precision and perfection.",
+      data: "From personalized keychains to tailor-made nameplates and industrial parts, we can laser cut whatever you imagine. We’ll turn ideas into reality with precision and perfection.",
     },
   ];
 

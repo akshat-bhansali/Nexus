@@ -20,14 +20,12 @@ export default function About() {
       </Center>
       <Heading
         size={"md"}
-        color={"#BEB7A4"}
         width={["80%", null, "60%"]}
       >
         Maktaba manufacturers home to AMCO, has been a trusted leader in metal fabrication since 1978. Specializing in high-quality Piano Hinges, we offer tailored solutions for custom projects, ensuring every product meets your exact specifications. Our expertise extends to crafting precision-engineered components for various industries, providing innovative and durable solutions that stand the test of time.
       </Heading>
       <br/>
       <Heading size={"md"}
-        color={"#BEB7A4"}
         width={["80%", null, "60%"]}
         marginBottom={"5%"}>Our comprehensive product range includes double slot channels with various bracket sizes, disco channels with clips, Z brackets, sliding door gear, slotted C channels, wall brackets, cable trays, and more. Each product is designed for optimal performance and reliability, whether for industrial, commercial, or residential applications. At MAKTABA MANUFACTURERS, we are committed to delivering unmatched quality and craftsmanship to meet the diverse needs of our customers.
 </Heading>
