@@ -89,7 +89,13 @@ export default function Services() {
         </Text>
       </Box>
 
-      <SimpleGrid columns={[1, 3]} spacing="2rem" px="15%" pb="4rem">
+      <SimpleGrid
+  columns={{ base: 1, sm: 1, md: 2, lg: 3, xl: 3 }}
+  spacing={{ base: "1.5rem", md: "2rem" }}
+  px={{ base: "1rem", sm: "2rem", md: "4rem", lg: "10%", xl: "15%" }}
+  pb={{ base: "2rem", md: "4rem" }}
+>
+
         {allServices.map((item, idx) => (
           <Box
             key={idx}
