@@ -11,7 +11,7 @@ export default function Videoplayer() {
           color={"black"}
           right={"0"}
           w={["100%", null, "50%"]}
-          h={"90vh"}
+          h={"100vh"}
           minWidth={"400px"}
           display={"flex"}
           flexDirection={"column"}
@@ -26,8 +26,8 @@ export default function Videoplayer() {
         </Box>
 
         <video
-          style={{ height: "90vh", width: "100%", objectFit: "cover" }}
-          src="video.mp4"
+          style={{ height: "100vh", width: "100%", objectFit: "cover" }}
+          src="video.MOV"
           type="video/mp4"
           autoPlay
           muted

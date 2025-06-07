@@ -43,7 +43,7 @@ export default function Footer() {
   
   return (
     <>
-      <Box textAlign={"center"} p={"5vh 0 0vh 0"}>
+      <Box textAlign={"center"} p={"10vh 0 0vh 0"}>
         <Heading p={"2% 0 1% 0"}>AMCO</Heading>
         <Heading size={"md"} p={["5% 10% 5% 10%", null, "1% 25% 1% 25%"]}>
         Since 1978, Maktaba Manufacturers, home to AMCO, has been a leader in custom metal fabrication and precision laser cutting. We create high-quality components like piano hinges, sliding door gears and more in MS, SS, brass, and aluminum.
