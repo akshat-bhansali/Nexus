@@ -1,51 +1,61 @@
-import { Flex, HStack, Heading, Link, Spacer, Text, Box } from "@chakra-ui/react";
-// import { useEffect, useState } from "react";
+import {
+  Flex,
+  HStack,
+  Link,
+  Spacer,
+  Box,
+  Image,
+} from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <>
-      <Flex
-        hideBelow={"md"}
-        as={"nav"}
-        alignItems={"center"}
-        justifyContent={"space-evenly"}
-        backgroundColor={"background"}
-        w={"100%"}
-        color={"foreground"}
-        h={"6rem"}
-        gap={"1rem"}
-        p={"0 4rem 0 3rem"}
-        minWidth={"800px"}
-      >
-        <Link as={ReactRouterLink} to="/">
-        <Box h={"18vh"} w={"10vw"}>
-        <img
-            style={{ height: "100%", width: "100%" }}
+    <Flex
+      as="nav"
+      align="center"
+      justify="space-between"
+      backgroundColor="background"
+      color="foreground"
+      w="100%"
+      px={{ base: "1rem", md: "3rem", lg: "4rem" }}
+      py={{ base: "0.5rem", md: "0", lg: "0" }}
+    >
+      {/* Logo container */}
+      <Link as={ReactRouterLink} to="/">
+        <Box
+          w={{ base: "100px", sm: "120px", md: "150px", lg: "200px" }}
+          flexShrink={0}               // so it never squashes below its min
+        >
+          <Image
             src="./logo.png"
             alt="logo"
+            w="100%"
+            h="auto"
+            objectFit="contain"
           />
-          </Box>
-        </Link>
-        <Spacer />
-        <HStack fontSize={"md"} spacing={"1.5rem"}>
-          <Link as={ReactRouterLink} to="/">
-            <Text>Home</Text>
-          </Link>
-          <Link as={ReactRouterLink} to="/about">
-            <Text>About</Text>
-          </Link>
-          <Link as={ReactRouterLink} to="/services">
-            <Text>Services</Text>
-          </Link>
-          <Link as={ReactRouterLink} to="/products">
-            <Text>Products</Text>
-          </Link>
-          <Link as={ReactRouterLink} to="/contactus">
-            <Text>Contact us</Text>
-          </Link>
-        </HStack>
-      </Flex>
-    </>
+        </Box>
+      </Link>
+
+      {/* Navigation links */}
+      <Spacer />
+
+      <HStack
+        as="ul"
+        spacing="1.5rem"
+        fontSize="md"
+        display={{ base: "none", md: "flex" }}
+      >
+        {["/", "/about", "/services", "/products", "/contactus"].map(
+          (path, i) => {
+            const label = ["Home", "About", "Services", "Products", "Contact us"][i];
+            return (
+              <Link as={ReactRouterLink} to={path} key={path}>
+                {label}
+              </Link>
+            );
+          }
+        )}
+      </HStack>
+    </Flex>
   );
 }

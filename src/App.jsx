@@ -35,7 +35,7 @@ function App() {
         color={"foreground"}
         bgColor={"background"}
       >
-        <Navbar />
+        {/* <Navbar /> */}
         <NavbarMob />
         <Outlet />
         <Spacer />

@@ -1,73 +1,96 @@
-import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
-  Drawer,
-  DrawerBody,
-  DrawerCloseButton,
-  DrawerContent,
-  DrawerOverlay,
   Flex,
-  Heading,
+  HStack,
   IconButton,
+  Image,
   Link,
+  Spacer,
   Text,
   useDisclosure,
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  DrawerBody,
+  VStack,
 } from "@chakra-ui/react";
-import { Link as ReactRouterLink } from "react-router-dom";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { Link as RouterLink } from "react-router-dom";
 
-export default function NavbarMob() {
+export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const navItems = [
+    { label: "Home", to: "/" },
+    { label: "About", to: "/about" },
+    { label: "Services", to: "/services" },
+    { label: "Products", to: "/products" },
+    { label: "Contact us", to: "/contactus" },
+  ];
+
   return (
     <>
       <Flex
-        hideFrom={"md"}
-        justifyContent={"space-between"}
-        alignItems={"center"}
-        p={"1rem"}
+        as="nav"
+        align="center"
+        px={{ base: "1rem", md: "3rem", lg: "4rem" }}
+        py="1rem"
+        bg="background"
+        color="foreground"
       >
-        <Link as={ReactRouterLink} to="/">
-        <Box h={"18vh"} w={"10vw"}>
-        <img
-            style={{ height: "100%", width: "100%" }}
-            src="./logo.png"
-            alt="logo"
-          />
+        {/* Logo */}
+        <Link as={RouterLink} to="/">
+          <Box w={{ base: "80px", sm: "100px", md: "150px" }} flexShrink={0}>
+            <Image src="./logo.png" alt="logo" w="100%" h="auto" />
           </Box>
         </Link>
-        <IconButton icon={<HamburgerIcon />} onClick={onOpen} />
+
+        {/* This spacer pushes everything that follows to the right */}
+        <Spacer />
+
+        {/* Desktop Links */}
+        <HStack
+          as="ul"
+          spacing="1.5rem"
+          fontSize="md"
+          display={{ base: "none", md: "flex" }}
+        >
+          {navItems.map((item) => (
+            <Link as={RouterLink} to={item.to} key={item.to}>
+              <Text>{item.label}</Text>
+            </Link>
+          ))}
+        </HStack>
+
+        {/* Mobile Hamburger */}
+        <IconButton
+          aria-label="Open menu"
+          icon={<HamburgerIcon />}
+          display={{ base: "flex", md: "none" }}
+          onClick={onOpen}
+          ml={{ base: "auto", md: 0 }}  // ensure it hugs the right on mobile
+        />
       </Flex>
-      <Drawer onClose={onClose} isOpen={isOpen} size={"full"}>
+
+      {/* Mobile Drawer */}
+      <Drawer isOpen={isOpen} onClose={onClose} placement="left" size="xs">
         <DrawerOverlay />
-        <DrawerContent bgColor={"rgba(0, 0, 0, 0.6)"}>
-          <DrawerCloseButton color={"foreground"} />
-          {/* <DrawerHeader textAlign="center" bgColor={"foreground"}>
-            <Heading>Menu</Heading>
-          </DrawerHeader> */}
-          <DrawerBody
-            display={"flex"}
-            flexDirection={"column"}
-            padding={"1rem 0 4rem 0"}
-            justifyContent={"space-evenly"}
-            textAlign={"center"}
-            bgColor={"rgba(0, 0, 0, 0.6)"}
-            color={"foreground"}
-            fontSize={"2xl"}
-          >
-            <Link as={ReactRouterLink} onClick={onClose} to="/">
-              <Text>Home</Text>
-            </Link>
-            <Link as={ReactRouterLink} onClick={onClose} to="/about">
-              <Text>About</Text>
-            </Link>
-            <Link as={ReactRouterLink} onClick={onClose} to="/products">
-              <Text>Products</Text>
-            </Link>
-            <Link as={ReactRouterLink} onClick={onClose} to="/services">
-              <Text>Services</Text>
-            </Link>
-            <Link as={ReactRouterLink} onClick={onClose} to="/contactus">
-              <Text>Contact us</Text>
-            </Link>
+        <DrawerContent>
+          <DrawerCloseButton mt="6px" />
+          <DrawerBody pt="4rem">
+            <VStack spacing="1.5rem" align="start">
+              {navItems.map((item) => (
+                <Link
+                  as={RouterLink}
+                  to={item.to}
+                  key={item.to}
+                  onClick={onClose}
+                  w="100%"
+                >
+                  <Text fontSize="xl">{item.label}</Text>
+                </Link>
+              ))}
+            </VStack>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
